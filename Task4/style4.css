@@ -1,12 +1,26 @@
 td{
     padding: 25px;
 }
+
+.firstImage {
+    background-image: url(images/mouse.jpg);
+
+}
+
+.secondImage {
+    background-image: url(images/10031-160x160.jpg);
+
+}
+
+.grayRectangle {
+    width: 160px; 
+    height: 160px; 
+    background-color: grey; 
+}
+
 /* Relief */
 .imageWithBoxShadow {
-    background-image: url(images/mouse.jpg);
-    width: 160px;
-    height: 160px;
-    background-color: grey;
+    
     border-radius: 20px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 
@@ -15,9 +29,6 @@ td{
 }
 
 .rectangle {
-    width: 160px; 
-    height: 160px; 
-    background-color: grey; 
     border-radius: 20px;
     box-shadow: 
         inset rgb(143, 140, 140) 28px  28px 10px -20px,
@@ -25,10 +36,6 @@ td{
 }
 
 .imageWithBoxShadow2{
-    background-image: url(images/10031-160x160.jpg);
-    width: 160px;
-    height: 160px;
-    background-color: grey;
     border-radius: 20px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 
@@ -37,10 +44,6 @@ td{
 }
 /* Embeded */
 .imageEmbedded {
-    background-image: url(images/mouse.jpg);
-    width: 160px;
-    height: 160px;
-    background-color: grey;
     border-radius: 100px;
     /* тень внешняя внизу и внутренняя вверху */
     box-shadow: 
@@ -49,21 +52,65 @@ td{
 }
 
 .rectangleEmbeded {
-    width: 160px; 
-    height: 160px; 
-    background-color: grey; 
     border-radius: 100px;
     box-shadow: 0 1px 0 rgba(255,255,255,.2),
  inset 0 4px 5px rgba(0,0,0,.6);
 }
 
 .imageEmbedded2{
-    background-image: url(images/10031-160x160.jpg);
-    width: 160px;
-    height: 160px;
-    background-color: rgb(15, 15, 15);
     border-radius: 100px;
     box-shadow: 
               0 2px 0 rgba(255,255,255,.2),
         inset 0 6px 8px rgba(0,0,0,.6);
 }
+
+/* Scotch */
+.scotchTD:after {
+    position: absolute;
+    content: '  ';
+    width: 80px;
+    height: 25px;
+    top:47%;
+    border: solid 1px rgba(121, 114, 41, 0.2);
+    background:
+    -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,rgba(254,243,127,.6)),
+    color-stop(100%,rgba(240,224,54,.6)));
+   }
+
+   .scotch1:after {
+    left: 10%;
+   }
+
+   .scotch2:after {
+    left: 21%;
+   }
+
+   .scotch3:after {
+    left: 32%;
+   }
+
+   .scotchedImage {
+    box-shadow:
+        inset 0 -1px 1px rgba(0,0,0,.5),
+        0 1px 2px rgba(0,0,0,.4);
+   }
+
+   /* Circle */
+   .circleImage {
+       border-radius: 100px;
+       box-shadow: inset 0 0 10px 10px white,
+       0 0 0px 10px rgb(253, 253, 253);
+   }
+
+   /* after не получается */
+   /* .circleGradient:after {
+    position: absolute;
+    content: ' ';
+    width: 63%;
+    height: 100%;
+    top: 65%;
+    left: 18%;
+    background:
+    -webkit-gradient(radial, 10% 10%, 50, 60% 60%,100, from(gray), to(white));
+   } */
