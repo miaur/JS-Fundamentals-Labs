@@ -1,0 +1,38 @@
+.link {
+    margin: 15px;
+}
+
+.link a{
+    color:grey;
+    font-size:1.3em;
+}
+
+.link a:hover{
+    color: yellow;
+    /* background-color: yellow; */
+}
+
+.link a:visited {
+    color: green;
+}
+
+.link a:active {
+    color:blueviolet;
+}
+
+.links :nth-child(2) a{
+    text-decoration: none;
+}
+
+.link :nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    text-decoration: none;
+    background-color: green;
+    border: 5px solid lightblue;
+    color: white;
+    padding: .5em;
+
+}

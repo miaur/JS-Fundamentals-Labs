@@ -1,0 +1,25 @@
+p {
+    font-size: 1.3em;
+    color: grey;
+    text-indent: 1.5em;
+}
+
+.paragraph p{
+    color:hotpink;
+}
+
+.paragraph p + p {
+    color: grey;
+}
+
+.paragraph :nth-child(even) {
+    font-variant:small-caps;
+}
+
+.paragraph :nth-child(2) {
+    border: 5px solid blueviolet;
+}
+
+.paragraph :last-child {
+    text-transform: uppercase;
+}

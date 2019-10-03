@@ -1,0 +1,62 @@
+table {
+    border-collapse:collapse;
+}
+
+td, th {
+    border:1px solid black;
+} 
+
+.tableWithGreyTr tr:nth-child(2n) {
+    color: grey;
+}
+
+.tableFixedHead{
+    width: 400px;
+    margin-left: 0;
+}
+.tableFixedHead thead{
+    display: block;
+}
+.tableFixedHead th{
+    width: 150px;
+}
+
+.tableFixedHead td{
+    width: 150px;
+}
+
+.tableBody thead{
+    display: block;
+    float: left;
+}
+.tableBody tbody{
+    display: block;
+    float: right;
+    overflow: auto;
+    height: 100px; 
+    width: 417px; 
+}
+.tableBody th{
+    width: 20px;
+}
+.tableBody td{
+    width: 150px;
+}
+
+.tableContainer {
+    width: 600px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    margin-left: 50px;
+    padding: 0;
+}
+
+.tableFixedColumn {
+    width: 800px;
+}
+
+.tableFixedColumn th {
+    width: 50px;
+    position: absolute;
+    left: 0;
+}
