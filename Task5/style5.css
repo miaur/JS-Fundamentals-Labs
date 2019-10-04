@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(211, 211, 211, 0.26);
+}
+
+header {
+    min-height:200px;
+    background:lightgray;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    /* background: lightgray; */
+}
+
+.head {
+    background: lightgray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logoText {
+    font: bold 3em Arial, sans-serif;
+    color: lightgray; /* Цвет текста, совпадает с цветом фона */
+    text-shadow: rgb(218, 147, 147) -1px -1px 0, 
+                 rgb(54, 38, 38) 1px 1px 0;
+}
+
+.wanted {
+    background-color: yellow;
+    border: 5px dotted red;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.wanted img {
+    border: 2px solid black;
+    width: 120px;
+    height: 120px;
+}
+
+.wanted h1 {
+    color: black;
+    font-family: Impact;
+    font-size: 4.75em;
+    font-weight: bold;
+    text-decoration: underline overline;
+    margin: 10px;
+}
+
+.wanted h2 {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.wanted p {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 15px 10px;
+}
